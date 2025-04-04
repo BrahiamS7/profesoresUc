@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs') %>
+<body>
+    <form action="/registrar" method="post">
+        <label for="usuario">Codigo de estudiante:</label>
+        <input type="text" name="usuario">
+        <label for="contra">Contraseña:</label>
+        <input type="text" name="contra">
+        <label for="confirmContra">Confirmar contraseña:</label>
+        <input type="text" name="confirmContra">
+        <input type="submit" value="Enviar">
+    </form>
+    <a href="/inicioSesion">Iniciar sesion</a>
+    <% if (msg){ %>
+        <p><%= msg %></p>
+    <% } %>
+</body>
+</html>
