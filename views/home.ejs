@@ -1,6 +1,10 @@
 <%- include('partials/header.ejs') %>
 <body>
+    <p>Bienvenido! <%= dataEst[0].nombre %></p>
     <p>Profesores a calificar:</p>
+    <%if(data){for(let i=0;i<data.length;i++){ %>
+        <a href="/profesor/<%= data[i].nombre %>"><%= data[i].nombre %></a>
+    <% }} %>
     <a href="/logout">Salir de la sesion</a>
 </body>
 </html>

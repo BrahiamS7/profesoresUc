@@ -1,0 +1,21 @@
+<%- include('partials/header.ejs') %>
+<body>
+    <p><%= data[0].nombre %></p>
+    <form action="/calificar" method="post">
+        <input type="hidden" name="idEstudiante" value="<%= dataEst[0].codigo_estudiante %>">
+        <input type="hidden" name="idProf" value="<%= data[0].id %>">
+        <label for="nota">Calificacion:</label>
+        <input type="number" name="nota">
+        <label for="coment">Observaciones:</label>
+        <input type="text" name="coment">
+        <input type="submit" value="Enviar">
+    </form>
+    <h1><% if(nota) {%>
+        <p>Calificacion: <%= nota %></p>
+        <% }%></h1>
+    <% if(errorMsg) {%>
+    <p><%= errorMsg %></p>
+    <% }%>
+    <a href="<%= paginaAnt %>">Volver</a>
+</body>
+</html>
