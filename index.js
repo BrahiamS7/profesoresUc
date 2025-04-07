@@ -107,8 +107,6 @@ app.get('/profesor/:nombre',async(req,res)=>{
             [data[0].id]
         )
         const calificacion=nota.rows
-        console.log(calificacion[0].promedio_calificacion);
-        
         res.render("profesor.ejs",{
             data:data,
             dataEst:dataEst,

@@ -3,6 +3,16 @@
     margin: 0;
     padding: 0;
 }
-label{
-    font-size: 30px;
+.inicioForm{
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inicioFormContainer{
+    background-color: aqua;
+    width: 500px;
+    height: 400px;
 }

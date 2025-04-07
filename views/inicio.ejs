@@ -1,12 +1,16 @@
 <%- include('partials/header.ejs') %>
 <body>
-    <form action="/inicioSesion" method="post">
-        <label for="user">Codigo de estudiante:</label>
-        <input type="text" name="user">
-        <label for="contra">Contraseña</label>
-        <input type="text" name="contra">
-        <input type="submit" value="Enviar">
-    </form>
-    <a href="/registrar">Registrarse</a>
+    <div class="inicioForm">
+        <div class="inicioFormContainer">
+            <form action="/inicioSesion" method="post">
+                <label for="user">Codigo de estudiante:</label>
+                <input type="text" name="user">
+                <label for="contra">Contraseña</label>
+                <input type="text" name="contra">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <a href="/registrar">Registrarse</a>
+    </div>
 </body>
 </html>
